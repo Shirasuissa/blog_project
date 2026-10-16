@@ -1,0 +1,174 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-size: 34px;
+    color: #c026d3;
+    background-color: #f3e8ff;
+    padding: 8px 16px;
+    border-radius: 12px;
+    width: 35%;
+    margin: 40px auto 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.posts {
+    width: 62%;
+    max-width: 850px;
+    margin: 40px auto 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card {
+    border: 1px solid #d99dd6;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.card:nth-child(1) {
+    background-color: #f7f5fb;
+    border-color: #7469e8;
+}
+
+.card:nth-child(2) {
+    background-color: #fff5f8;
+    border-color: #ff6fae;
+}
+
+.card:nth-child(3) {
+    background-color: #f1fbff;
+    border-color: #3bbbe8;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-actions  .material-symbols-outlined {
+    font-size: 18px;
+}
+
+
+.card h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #615e5e;
+}
+
+.post-text {
+    margin-top: 18px;
+    line-height: 1.7;
+    font-size: 14px;
+    color: #5c5656;
+}
+
+.post-text::first-letter {
+    font-size: 42px;
+    font-weight: bold;
+    float: left;
+    margin-right: 8px;
+    color: rgb(118, 216, 216);
+    margin-top: -13px;
+}
+
+.post-text::first-line {
+    font-weight: bold;
+}
+
+.react-text {
+    font-family: "Poppins", sans-serif;
+}
+.web-development {
+    font-family: "Lora", serif;
+}
+.css-grid{
+    font-family: "Libre Caslon Condensed", serif ;
+}
+.dark-toggle {
+    appearance: none;
+    width: 30px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+}
+
+.dark-toggle::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+}
+
+.dark-toggle:checked::before {
+    left: 12px;
+    background-color:#333;
+}
+
+.dark-toggle:checked {
+    background-color:white;
+}
+
+.card:has(.dark-toggle:checked) {
+    background-color: black;
+    color: #ccc;
+}
+
+.card:has(.dark-toggle:checked) h2{
+    color: white;
+}
+
+.delete-btn {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 4px 6px;
+}
+
+.delete-btn:hover{
+    color: white;
+    background-color: #e91e3a;
+    border-color: #e91e3a;
+}
